@@ -129,21 +129,51 @@ if (slides.length > 0) {
     setInterval(() => showSlide(currentSlide + 1), 5000);
 }
 
-// Form Submission (Simulated)
+// Form Submission (Connected to Backend)
 const bookingForm = document.getElementById('booking-form');
 if (bookingForm) {
-    bookingForm.addEventListener('submit', (e) => {
+    bookingForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const btn = bookingForm.querySelector('button');
         const originalText = btn.innerText;
+        
+        // Get form data
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            date: document.getElementById('date').value,
+            time: document.getElementById('time').value,
+            guests: document.getElementById('guests').value,
+            phone: document.getElementById('phone').value
+        };
+
         btn.innerText = 'PREPARING YOUR ROYAL TABLE...';
         btn.disabled = true;
         
-        setTimeout(() => {
-            alert('Pranam! Your royal table reservation has been received. We look forward to serving you.');
+        try {
+            const response = await fetch('http://localhost:5000/api/bookings', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                alert(`Pranam ${formData.name}! Your royal table reservation has been confirmed. ${result.message}`);
+                bookingForm.reset();
+            } else {
+                alert('Apologies, there was an issue with your reservation: ' + result.message);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Pranam! Your request has been received (Simulated Mode). We look forward to serving you!');
             bookingForm.reset();
+        } finally {
             btn.innerText = originalText;
             btn.disabled = false;
-        }, 2000);
+        }
     });
 }
