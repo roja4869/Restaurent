@@ -42,8 +42,6 @@
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#chef">Chef</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#reservation">Contact</a></li>
             </ul>
@@ -59,18 +57,18 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg" style="background-image: url('https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg');"></div>
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay" style="background: radial-gradient(circle, rgba(74, 14, 14, 0.6) 0%, rgba(10, 10, 10, 0.95) 90%);"></div>
         <div class="container hero-content">
-            <h2 class="reveal-up">Padharo Mhare Des</h2>
-            <h1 class="reveal-up glow-text" style="font-family: 'Cinzel', serif;">Royal Spice Palace</h1>
-            <p class="reveal-up">A Grand Celebration of Indian Traditional Luxury & Authentic Palace Flavors.</p>
+            <h2 class="reveal-up" style="letter-spacing: 10px;">The Royal Feast</h2>
+            <h1 class="reveal-up glow-text" style="font-family: 'Cinzel', serif; font-size: 6.5rem;">Royal Spice Palace</h1>
+            <p class="reveal-up" style="font-size: 1.5rem; letter-spacing: 2px;">Experience the cinematic grand traditional luxury of Indian royalty.</p>
             <div class="hero-btns reveal-up">
                 <a href="#reservation" class="btn btn-primary">Book a Royal Table</a>
                 <a href="#menu" class="btn btn-outline">Explore Menu</a>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span style="color: var(--gold);">Scroll</span>
+            <span style="color: var(--gold);">Explore Heritage</span>
             <div class="mouse" style="border-color: var(--gold);"></div>
         </div>
     </section>
@@ -82,27 +80,30 @@
                 <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg" alt="Indian Palace Dining" class="parallax-img">
                 <div class="experience-badge" style="background: linear-gradient(var(--gold), #B8860B); color: var(--black);">
                     <span class="number">25</span>
-                    <span class="text">Years of Royal Heritage</span>
+                    <span class="text">Years of Heritage</span>
                 </div>
             </div>
             <div class="about-text reveal-right">
                 <span class="subtitle">Our Grand Legacy</span>
-                <h2 style="font-family: 'Cinzel', serif;">The Soul of Indian Tradition</h2>
-                <p>Welcome to Royal Spice Palace, where every corner whispers stories of ancient kingdoms. We bring you a dining experience that transcends time, blending grand traditional aesthetics with the finest culinary secrets from royal kitchens across India.</p>
-                <div class="about-features">
-                    <div class="feature-item">
-                        <i data-lucide="crown" style="color: var(--gold);"></i>
-                        <div>
-                            <h4>Authentic Royal Recipes</h4>
-                            <p>Dishes once served to Maharajas, recreated with precision.</p>
-                        </div>
+                <h2 style="font-family: 'Cinzel', serif;">The Taste of India’s Royal Heritage</h2>
+                <p>“At Royal Spice Palace, every meal is crafted to celebrate the rich traditions of Indian cuisine. From aromatic biryanis to authentic tandoori delicacies, we serve flavors inspired by royal kitchens across India. Experience warm hospitality, elegant ambiance, and unforgettable taste in every bite.”</p>
+                
+                <div class="about-features-grid">
+                    <div class="feature-card">
+                        <i data-lucide="sparkles"></i>
+                        <h4>Authentic Indian Spices</h4>
                     </div>
-                    <div class="feature-item">
-                        <i data-lucide="sparkles" style="color: var(--gold);"></i>
-                        <div>
-                            <h4>Majestic Atmosphere</h4>
-                            <p>A cinematic setting inspired by India's most stunning palaces.</p>
-                        </div>
+                    <div class="feature-card">
+                        <i data-lucide="flame"></i>
+                        <h4>Traditional Tandoor Cooking</h4>
+                    </div>
+                    <div class="feature-card">
+                        <i data-lucide="crown"></i>
+                        <h4>Premium Dining Experience</h4>
+                    </div>
+                    <div class="feature-card">
+                        <i data-lucide="leaf"></i>
+                        <h4>Fresh Ingredients Daily</h4>
                     </div>
                 </div>
             </div>
@@ -275,65 +276,286 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="section gallery dark-bg">
-        <div class="container text-center">
-            <span class="subtitle">A Visual Symphony</span>
-            <h2 style="font-family: 'Cinzel', serif;">Our Royal Gallery</h2>
-            <div class="masonry-grid">
-                <div class="masonry-item reveal-up"><img src="assets/chicken65.jpg" alt="Chicken 65"></div>
-                <div class="masonry-item reveal-up"><img src="assets/tandoori.jpg" alt="Tandoori Chicken"></div>
-                <div class="masonry-item reveal-up"><img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg" alt="Biryani"></div>
-                <div class="masonry-item reveal-up"><img src="assets/kebab.jpg" alt="Kebab"></div>
-                <div class="masonry-item reveal-up"><img src="assets/gallery_spread.jpg" alt="Indian Food Spread"></div>
-                <div class="masonry-item reveal-up"><img src="assets/gallery_bowls.png" alt="Royal Curry Bowls"></div>
+    <!-- Popular Drinks Section -->
+    <section id="drinks" class="section popular-drinks">
+        <div class="container">
+            <div class="text-center">
+                <span class="subtitle">Refreshing Traditions</span>
+                <h2 style="font-family: 'Cinzel', serif;">Popular Indian Drinks</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/4051674/pexels-photo-4051674.jpeg" alt="Mango Lassi">
+                        <span class="price">$8</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Mango Lassi</h3>
+                        <p>Creamy yogurt drink blended with sweet Alphonso mango pulp.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/5946974/pexels-photo-5946974.jpeg" alt="Masala Chai">
+                        <span class="price">$5</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Masala Chai</h3>
+                        <p>Traditional Indian spiced tea brewed with ginger and cardamom.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/3313063/pexels-photo-3313063.jpeg" alt="Rose Milk">
+                        <span class="price">$7</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Rose Milk</h3>
+                        <p>Chilled milk infused with fragrant rose syrup and edible petals.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/10184478/pexels-photo-10184478.jpeg" alt="Badam Milk">
+                        <span class="price">$9</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Badam Milk</h3>
+                        <p>Rich, warm almond milk garnished with saffron and chopped nuts.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/452737/pexels-photo-452737.jpeg" alt="Fresh Lime Soda">
+                        <span class="price">$6</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Fresh Lime Soda</h3>
+                        <p>Zesty lime juice with soda, available sweet or salty.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="section reviews">
+    <!-- Royal Desserts Section -->
+    <section id="desserts" class="section royal-desserts dark-bg">
         <div class="container">
-            <div class="testimonial-slider text-center">
-                <div class="testimonial-container" id="testimonial-container">
-                    <div class="testimonial-slide">
-                        <div class="quote-icon"><i data-lucide="quote" style="color: var(--gold);"></i></div>
-                        <p class="review-text" style="color: var(--cream);">"The atmosphere at Royal Spice Palace is truly majestic. It feels like stepping into a Rajasthan palace. The flavors are exceptionally authentic."</p>
-                        <div class="user-info">
-                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User">
-                            <div>
-                                <h4 style="color: var(--gold);">Aditi Sharma</h4>
-                                <p>Food Critic</p>
-                            </div>
+            <div class="text-center">
+                <span class="subtitle">Sweet Royalty</span>
+                <h2 style="font-family: 'Cinzel', serif;">Royal Desserts</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/20349448/pexels-photo-20349448.jpeg" alt="Gulab Jamun">
+                        <span class="price">$10</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Gulab Jamun</h3>
+                        <p>Golden milk dumplings soaked in a warm rose-infused saffron syrup.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/10398292/pexels-photo-10398292.jpeg" alt="Rasmalai">
+                        <span class="price">$12</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Rasmalai</h3>
+                        <p>Soft cottage cheese discs immersed in thick, sweetened saffron milk.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/11115802/pexels-photo-11115802.jpeg" alt="Kaju Katli">
+                        <span class="price">$15</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Kaju Katli</h3>
+                        <p>Exquisite cashew fudge decorated with pure silver leaf.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/16148356/pexels-photo-16148356.jpeg" alt="Gajar Halwa">
+                        <span class="price">$11</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Gajar Halwa</h3>
+                        <p>Warm, slow-cooked carrot pudding with dry fruits and mawa.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/14105214/pexels-photo-14105214.jpeg" alt="Kulfi">
+                        <span class="price">$9</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Malai Kulfi</h3>
+                        <p>Traditional dense Indian ice cream with cardamom and pistachios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditional Breads Section -->
+    <section id="breads" class="section traditional-breads">
+        <div class="container">
+            <div class="text-center">
+                <span class="subtitle">From the Tandoor</span>
+                <h2 style="font-family: 'Cinzel', serif;">Traditional Indian Breads</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/11170284/pexels-photo-11170284.jpeg" alt="Butter Naan">
+                        <span class="price">$4</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Butter Naan</h3>
+                        <p>Soft and fluffy tandoor-baked bread glazed with premium butter.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/1310777/pexels-photo-1310777.jpeg" alt="Garlic Naan">
+                        <span class="price">$5</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Garlic Naan</h3>
+                        <p>Leavened bread topped with roasted garlic and fresh coriander.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg" alt="Tandoori Roti">
+                        <span class="price">$3</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Tandoori Roti</h3>
+                        <p>Whole wheat bread baked in a traditional clay oven.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/12737659/pexels-photo-12737659.jpeg" alt="Laccha Paratha">
+                        <span class="price">$6</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Laccha Paratha</h3>
+                        <p>Layered, flaky whole wheat bread cooked to crispy perfection.</p>
+                    </div>
+                </div>
+                <div class="glass-card reveal-up">
+                    <div class="food-img">
+                        <img src="https://images.pexels.com/photos/12737658/pexels-photo-12737658.jpeg" alt="Stuffed Kulcha">
+                        <span class="price">$7</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Stuffed Kulcha</h3>
+                        <p>Soft bread stuffed with spiced potatoes and royal herbs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews dark-bg">
+        <div class="container">
+            <div class="text-center">
+                <span class="subtitle">Guest Experiences</span>
+                <h2 style="font-family: 'Cinzel', serif;">What Our Guests Say</h2>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card reveal-up">
+                    <div class="stars">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p>"An absolute masterpiece! The Biryani reminded me of the kitchens in Hyderabad. The ambiance is pure royalty."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-initials">AS</div>
+                        <div>
+                            <h4>Aditi Sharma</h4>
+                            <p>Premium Member</p>
                         </div>
                     </div>
                 </div>
-                <div class="slider-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                <div class="review-card reveal-up">
+                    <div class="stars">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p>"The best dining experience in Jaipur. The service is impeccable, and the Garlic Naan is to die for!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-initials">RK</div>
+                        <div>
+                            <h4>Rajesh Khanna</h4>
+                            <p>Food Blogger</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chef Section -->
-    <section id="chef" class="section chef dark-bg">
-        <div class="container split-layout reverse">
-            <div class="chef-image reveal-right">
-                <img src="https://images.pexels.com/photos/1510682/pexels-photo-1510682.jpeg" alt="Head Chef">
-            </div>
-            <div class="chef-text reveal-left">
-                <span class="subtitle">The Royal Alchemist</span>
-                <h2 style="font-family: 'Cinzel', serif;">Chef Rajesh Kumar</h2>
-                <p>Guardian of ancient spice blends, Chef Rajesh ensures every dish served is a tribute to the royal culinary traditions of India.</p>
-                <div class="chef-quote">
-                    "We don't just cook food; we recreate a legacy of royal hospitality and taste."
+                <div class="review-card reveal-up">
+                    <div class="stars">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p>"Truly a Royal Palace. Every bite of the Mutton Rogan Josh takes you on a journey to Kashmir."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-initials">VP</div>
+                        <div>
+                            <h4>Vikram Patel</h4>
+                            <p>Local Guide</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a href="#"><i data-lucide="instagram"></i></a>
-                    <a href="#"><i data-lucide="twitter"></i></a>
-                    <a href="#"><i data-lucide="linkedin"></i></a>
+                <div class="review-card reveal-up">
+                    <div class="stars">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p>"Exquisite presentation and authentic flavors. The Rasmalai is the perfect end to a royal meal."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-initials">SM</div>
+                        <div>
+                            <h4>Sonia Mehra</h4>
+                            <p>Regular Guest</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card reveal-up">
+                    <div class="stars">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p>"A cinematic experience! From the entrance to the desserts, everything is perfectly grand."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-initials">AB</div>
+                        <div>
+                            <h4>Arjun Bansal</h4>
+                            <p>Celebrity Chef</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -397,37 +619,35 @@
                 <div class="footer-brand">
                     <h2 class="logo" style="color: var(--gold); font-family: 'Cinzel', serif;">Royal Spice Palace</h2>
                     <p>Where tradition meets luxury. Experience the true essence of Indian royalty in every bite.</p>
+                    <div class="footer-cta">Reserve Your Royal Dining Experience Today</div>
                     <div class="social-links">
                         <a href="#"><i data-lucide="facebook"></i></a>
                         <a href="#"><i data-lucide="instagram"></i></a>
                         <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h3 style="color: var(--gold);">Explore</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#menu">The Menu</a></li>
-                        <li><a href="#reservation">Book Table</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                    </ul>
+                <div class="footer-info">
+                    <h3>Explore</h3>
+                    <p><a href="#home" style="color: var(--cream); text-decoration: none;">Home</a></p>
+                    <p><a href="#about" style="color: var(--cream); text-decoration: none;">About</a></p>
+                    <p><a href="#menu" style="color: var(--cream); text-decoration: none;">The Menu</a></p>
+                    <p><a href="#reviews" style="color: var(--cream); text-decoration: none;">Reviews</a></p>
                 </div>
-                <div class="footer-contact">
-                    <h3 style="color: var(--gold);">Contact</h3>
-                    <p><i data-lucide="map-pin" style="color: var(--gold);"></i> 456 Palace Lane, Jaipur, RJ</p>
-                    <p><i data-lucide="phone" style="color: var(--gold);"></i> +91 141 555 0198</p>
-                    <p><i data-lucide="mail" style="color: var(--gold);"></i> royal@spicepalace.com</p>
+                <div class="footer-info">
+                    <h3>Timing</h3>
+                    <p>Mon - Fri: 11:00 AM - 11:00 PM</p>
+                    <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+                    <p>Lunch Buffet: 12:30 PM - 3:30 PM</p>
                 </div>
-                <div class="footer-newsletter">
-                    <h3 style="color: var(--gold);">Royal Updates</h3>
-                    <p>Subscribe for exclusive royal events.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your Email">
-                        <button type="submit" style="background: var(--gold);"><i data-lucide="send" style="color: #000;"></i></button>
-                    </form>
+                <div class="footer-info">
+                    <h3>Contact</h3>
+                    <p><i data-lucide="map-pin"></i> 456 Palace Lane, Jaipur, RJ</p>
+                    <p><i data-lucide="phone"></i> +91 141 555 0198</p>
+                    <p><i data-lucide="mail"></i> royal@spicepalace.com</p>
                 </div>
             </div>
-            <div class="footer-bottom text-center">
+            <div class="footer-bottom text-center" style="margin-top: 50px; border-top: 1px solid var(--glass-border); padding-top: 30px;">
                 <p>&copy; 2026 Royal Spice Palace. All Rights Reserved. Crafted with Royal Pride.</p>
             </div>
         </div>
