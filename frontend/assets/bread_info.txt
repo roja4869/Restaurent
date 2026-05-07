@@ -1,0 +1,2 @@
+/* Placeholder for the user's bread images */
+/* These would normally be saved to the assets folder */
