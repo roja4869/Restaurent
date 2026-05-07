@@ -87,6 +87,9 @@ tabBtns.forEach(btn => {
             cat.classList.remove('active');
             if (cat.id === target) {
                 cat.classList.add('active');
+                // Trigger reveal for elements inside the new category
+                const revealInCat = cat.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+                revealInCat.forEach(el => el.classList.add('active'));
             }
         });
     });
