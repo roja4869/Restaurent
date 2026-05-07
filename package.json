@@ -1,0 +1,27 @@
+{
+  "name": "restaurent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix frontend\"",
+    "backend": "npm start --prefix backend",
+    "frontend": "npm start --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roja4869/Restaurent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/roja4869/Restaurent/issues"
+  },
+  "homepage": "https://github.com/roja4869/Restaurent#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
