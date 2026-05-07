@@ -316,107 +316,75 @@ h2 {
     color: var(--cream);
 }
 
-/* About Section Enhancements */
-.about .split-layout {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 50px;
-    align-items: center;
-}
-
-.about-text h2 {
-    margin-bottom: 15px; /* Reduced from 20px */
-}
-
-.about-text p {
-    margin-bottom: 25px;
-    font-size: 1.05rem;
-}
-
-.about-features-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.feature-card {
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    padding: 25px;
-    border-radius: 15px;
-    transition: var(--transition);
-    text-align: left;
-}
-
-.feature-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-5px);
-    box-shadow: var(--glow);
-}
-
-.feature-card i {
-    font-size: 2rem;
-    color: var(--gold);
-    margin-bottom: 15px;
-    display: block;
-}
-
-.feature-card h4 {
-    color: var(--gold);
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-/* Menu & Food Cards */
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
-}
-
-.glass-card {
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    border-radius: 25px;
-    padding: 30px;
-    backdrop-filter: blur(15px);
-    transition: var(--transition);
+/* About Section Image Fix */
+.about-image {
     position: relative;
+    border-radius: 30px;
     overflow: hidden;
+    height: 600px;
 }
 
-.glass-card:hover {
-    transform: translateY(-15px);
-    border-color: var(--gold);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 30px rgba(212, 175, 55, 0.2);
-}
-
-.food-img {
-    height: 280px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 25px;
-    position: relative;
-}
-
-.food-img img {
+.parallax-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    transition: transform 0.8s ease;
 }
 
-.price {
+.about-image:hover .parallax-img {
+    transform: scale(1.05);
+}
+
+.experience-badge {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    z-index: 2;
+}
+
+/* Menu Tabs System */
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--cream);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    transition: var(--transition);
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+.tab-btn:hover, .tab-btn.active {
     background: var(--gold);
     color: var(--black);
-    padding: 6px 18px;
-    border-radius: 30px;
-    font-weight: 700;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-color: var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.menu-category {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 35px;
+    animation: fadeIn 0.8s ease;
+}
+
+.menu-category.active {
+    display: grid;
 }
 
 /* New Menu Sections */
