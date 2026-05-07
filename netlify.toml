@@ -1,0 +1,10 @@
+[build]
+  # Tell Netlify where your website files are located
+  base = "frontend"
+  publish = "."
+  command = "echo 'Building Royal Spice Palace...'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
