@@ -57,7 +57,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg" style="background-image: url('https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg');"></div>
-        <div class="hero-overlay" style="background: radial-gradient(circle, rgba(74, 14, 14, 0.6) 0%, rgba(10, 10, 10, 0.95) 90%);"></div>
+        <div class="hero-overlay" style="background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, rgba(74, 14, 14, 0.4) 40%, rgba(10, 10, 10, 0.95) 100%);"></div>
         <div class="container hero-content">
             <h2 class="reveal-up" style="letter-spacing: 10px;">The Royal Feast</h2>
             <h1 class="reveal-up glow-text" style="font-family: 'Cinzel', serif; font-size: 6.5rem;">Royal Spice Palace</h1>
@@ -85,25 +85,29 @@
             </div>
             <div class="about-text reveal-right">
                 <span class="subtitle">Our Grand Legacy</span>
-                <h2 style="font-family: 'Cinzel', serif;">The Taste of India’s Royal Heritage</h2>
-                <p>“At Royal Spice Palace, every meal is crafted to celebrate the rich traditions of Indian cuisine. From aromatic biryanis to authentic tandoori delicacies, we serve flavors inspired by royal kitchens across India. Experience warm hospitality, elegant ambiance, and unforgettable taste in every bite.”</p>
+                <h2 style="font-family: 'Cinzel', serif; margin-bottom: 10px;">THE TASTE OF INDIA’S ROYAL HERITAGE</h2>
+                <p style="margin-top: 0; margin-bottom: 25px;">“At Royal Spice Palace, every dish is prepared to honor the rich traditions of Indian cuisine. From flavorful biryanis to authentic tandoori specialties, we bring the taste of India’s royal kitchens to your table. Enjoy elegant ambiance, warm hospitality, and unforgettable flavors crafted with passion and tradition.”</p>
                 
                 <div class="about-features-grid">
                     <div class="feature-card">
                         <i data-lucide="sparkles"></i>
                         <h4>Authentic Indian Spices</h4>
-                    </div>
-                    <div class="feature-card">
-                        <i data-lucide="flame"></i>
-                        <h4>Traditional Tandoor Cooking</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Traditional flavors blended with premium ingredients.</p>
                     </div>
                     <div class="feature-card">
                         <i data-lucide="crown"></i>
-                        <h4>Premium Dining Experience</h4>
+                        <h4>Royal Dining Experience</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Elegant atmosphere inspired by India’s grand palaces.</p>
                     </div>
                     <div class="feature-card">
-                        <i data-lucide="leaf"></i>
-                        <h4>Fresh Ingredients Daily</h4>
+                        <i data-lucide="utensils"></i>
+                        <h4>Freshly Prepared Dishes</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Every meal cooked fresh with rich Indian aromas.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i data-lucide="flame"></i>
+                        <h4>Traditional Tandoor Recipes</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Authentic recipes crafted with classic techniques.</p>
                     </div>
                 </div>
             </div>
@@ -195,42 +199,164 @@
                     </div>
                 </div>
 
-                <!-- Breads, Desserts, Drinks - Following same pattern -->
+                <!-- Breads -->
                 <div class="menu-category" id="breads">
                     <div class="food-card glass-card reveal-up">
                         <div class="food-img">
-                            <img src="assets/naan.png" alt="Naan">
+                            <img src="https://images.pexels.com/photos/11170284/pexels-photo-11170284.jpeg" alt="Butter Naan">
+                            <span class="price">$4</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Butter Naan</h3>
+                            <p>Soft and fluffy tandoor-baked bread glazed with premium butter.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/1310777/pexels-photo-1310777.jpeg" alt="Garlic Naan">
                             <span class="price">$5</span>
                         </div>
                         <div class="food-info">
-                            <h3 style="color: var(--gold);">Butter Garlic Naan</h3>
-                            <p>Soft tandoor bread topped with garlic and pure clarified butter.</p>
+                            <h3>Garlic Naan</h3>
+                            <p>Leavened bread topped with roasted garlic and fresh coriander.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg" alt="Tandoori Roti">
+                            <span class="price">$3</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Tandoori Roti</h3>
+                            <p>Whole wheat bread baked in a traditional clay oven.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/12737659/pexels-photo-12737659.jpeg" alt="Laccha Paratha">
+                            <span class="price">$6</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Laccha Paratha</h3>
+                            <p>Layered, flaky whole wheat bread cooked to crispy perfection.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/12737658/pexels-photo-12737658.jpeg" alt="Stuffed Kulcha">
+                            <span class="price">$7</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Stuffed Kulcha</h3>
+                            <p>Soft bread stuffed with spiced potatoes and royal herbs.</p>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Desserts -->
                 <div class="menu-category" id="desserts">
                     <div class="food-card glass-card reveal-up">
                         <div class="food-img">
-                            <img src="assets/gulabjamun.jpg" alt="Gulab Jamun">
+                            <img src="https://images.pexels.com/photos/20349448/pexels-photo-20349448.jpeg" alt="Gulab Jamun">
                             <span class="price">$10</span>
                         </div>
                         <div class="food-info">
-                            <h3 style="color: var(--gold);">Gulab Jamun</h3>
-                            <p>Deep-fried milk dumplings soaked in a warm rose and saffron syrup.</p>
+                            <h3>Gulab Jamun</h3>
+                            <p>Golden milk dumplings soaked in a warm rose-infused saffron syrup.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/10398292/pexels-photo-10398292.jpeg" alt="Rasmalai">
+                            <span class="price">$12</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Rasmalai</h3>
+                            <p>Soft cottage cheese discs immersed in thick, sweetened saffron milk.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/16148356/pexels-photo-16148356.jpeg" alt="Gajar Halwa">
+                            <span class="price">$11</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Gajar Halwa</h3>
+                            <p>Warm, slow-cooked carrot pudding with dry fruits and mawa.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/14105214/pexels-photo-14105214.jpeg" alt="Kulfi">
+                            <span class="price">$9</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Malai Kulfi</h3>
+                            <p>Traditional dense Indian ice cream with cardamom and pistachios.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/11115802/pexels-photo-11115802.jpeg" alt="Kaju Katli">
+                            <span class="price">$15</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Kaju Katli</h3>
+                            <p>Exquisite cashew fudge decorated with pure silver leaf.</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Drinks -->
                 <div class="menu-category" id="drinks">
                     <div class="food-card glass-card reveal-up">
                         <div class="food-img">
-                            <img src="assets/mangolassi.png" alt="Mango Lassi">
+                            <img src="https://images.pexels.com/photos/4051674/pexels-photo-4051674.jpeg" alt="Mango Lassi">
                             <span class="price">$8</span>
                         </div>
                         <div class="food-info">
-                            <h3 style="color: var(--gold);">Mango Lassi</h3>
-                            <p>Chilled yogurt drink blended with the finest Alphonso mangoes.</p>
+                            <h3>Mango Lassi</h3>
+                            <p>Creamy yogurt drink blended with sweet Alphonso mango pulp.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/5946974/pexels-photo-5946974.jpeg" alt="Masala Chai">
+                            <span class="price">$5</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Masala Chai</h3>
+                            <p>Traditional Indian spiced tea brewed with ginger and cardamom.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/3313063/pexels-photo-3313063.jpeg" alt="Rose Milk">
+                            <span class="price">$7</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Rose Milk</h3>
+                            <p>Chilled milk infused with fragrant rose syrup and edible petals.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/10184478/pexels-photo-10184478.jpeg" alt="Badam Milk">
+                            <span class="price">$9</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Badam Milk</h3>
+                            <p>Rich, warm almond milk garnished with saffron and chopped nuts.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/452737/pexels-photo-452737.jpeg" alt="Fresh Lime Soda">
+                            <span class="price">$6</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Fresh Lime Soda</h3>
+                            <p>Zesty lime juice with soda, available sweet or salty.</p>
                         </div>
                     </div>
                 </div>
@@ -276,191 +402,6 @@
         </div>
     </section>
 
-    <!-- Popular Drinks Section -->
-    <section id="drinks" class="section popular-drinks">
-        <div class="container">
-            <div class="text-center">
-                <span class="subtitle">Refreshing Traditions</span>
-                <h2 style="font-family: 'Cinzel', serif;">Popular Indian Drinks</h2>
-            </div>
-            <div class="menu-grid">
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/4051674/pexels-photo-4051674.jpeg" alt="Mango Lassi">
-                        <span class="price">$8</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Mango Lassi</h3>
-                        <p>Creamy yogurt drink blended with sweet Alphonso mango pulp.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/5946974/pexels-photo-5946974.jpeg" alt="Masala Chai">
-                        <span class="price">$5</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Masala Chai</h3>
-                        <p>Traditional Indian spiced tea brewed with ginger and cardamom.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/3313063/pexels-photo-3313063.jpeg" alt="Rose Milk">
-                        <span class="price">$7</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Rose Milk</h3>
-                        <p>Chilled milk infused with fragrant rose syrup and edible petals.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/10184478/pexels-photo-10184478.jpeg" alt="Badam Milk">
-                        <span class="price">$9</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Badam Milk</h3>
-                        <p>Rich, warm almond milk garnished with saffron and chopped nuts.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/452737/pexels-photo-452737.jpeg" alt="Fresh Lime Soda">
-                        <span class="price">$6</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Fresh Lime Soda</h3>
-                        <p>Zesty lime juice with soda, available sweet or salty.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Royal Desserts Section -->
-    <section id="desserts" class="section royal-desserts dark-bg">
-        <div class="container">
-            <div class="text-center">
-                <span class="subtitle">Sweet Royalty</span>
-                <h2 style="font-family: 'Cinzel', serif;">Royal Desserts</h2>
-            </div>
-            <div class="menu-grid">
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/20349448/pexels-photo-20349448.jpeg" alt="Gulab Jamun">
-                        <span class="price">$10</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Gulab Jamun</h3>
-                        <p>Golden milk dumplings soaked in a warm rose-infused saffron syrup.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/10398292/pexels-photo-10398292.jpeg" alt="Rasmalai">
-                        <span class="price">$12</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Rasmalai</h3>
-                        <p>Soft cottage cheese discs immersed in thick, sweetened saffron milk.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/11115802/pexels-photo-11115802.jpeg" alt="Kaju Katli">
-                        <span class="price">$15</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Kaju Katli</h3>
-                        <p>Exquisite cashew fudge decorated with pure silver leaf.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/16148356/pexels-photo-16148356.jpeg" alt="Gajar Halwa">
-                        <span class="price">$11</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Gajar Halwa</h3>
-                        <p>Warm, slow-cooked carrot pudding with dry fruits and mawa.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/14105214/pexels-photo-14105214.jpeg" alt="Kulfi">
-                        <span class="price">$9</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Malai Kulfi</h3>
-                        <p>Traditional dense Indian ice cream with cardamom and pistachios.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Traditional Breads Section -->
-    <section id="breads" class="section traditional-breads">
-        <div class="container">
-            <div class="text-center">
-                <span class="subtitle">From the Tandoor</span>
-                <h2 style="font-family: 'Cinzel', serif;">Traditional Indian Breads</h2>
-            </div>
-            <div class="menu-grid">
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/11170284/pexels-photo-11170284.jpeg" alt="Butter Naan">
-                        <span class="price">$4</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Butter Naan</h3>
-                        <p>Soft and fluffy tandoor-baked bread glazed with premium butter.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/1310777/pexels-photo-1310777.jpeg" alt="Garlic Naan">
-                        <span class="price">$5</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Garlic Naan</h3>
-                        <p>Leavened bread topped with roasted garlic and fresh coriander.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg" alt="Tandoori Roti">
-                        <span class="price">$3</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Tandoori Roti</h3>
-                        <p>Whole wheat bread baked in a traditional clay oven.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/12737659/pexels-photo-12737659.jpeg" alt="Laccha Paratha">
-                        <span class="price">$6</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Laccha Paratha</h3>
-                        <p>Layered, flaky whole wheat bread cooked to crispy perfection.</p>
-                    </div>
-                </div>
-                <div class="glass-card reveal-up">
-                    <div class="food-img">
-                        <img src="https://images.pexels.com/photos/12737658/pexels-photo-12737658.jpeg" alt="Stuffed Kulcha">
-                        <span class="price">$7</span>
-                    </div>
-                    <div class="food-info">
-                        <h3>Stuffed Kulcha</h3>
-                        <p>Soft bread stuffed with spiced potatoes and royal herbs.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- Reviews Section -->
