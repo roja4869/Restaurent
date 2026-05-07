@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Spice Palace | Grand Indian Traditional Luxury</title>
+    <meta name="description" content="Experience the grand traditional luxury of Indian fine dining at Royal Spice Palace. Authentic royal recipes in a palace-inspired setting.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Decorative Particles -->
+    <div id="particles-container"></div>
+
+    <!-- Preloader -->
+    <div id="preloader" style="background: var(--maroon);">
+        <div class="loader-content">
+            <h1 class="loader-logo" style="color: var(--gold); font-family: 'Cinzel', serif;">Royal Spice Palace</h1>
+            <div class="loader-bar" style="background: var(--gold);"></div>
+            <p style="color: var(--cream); margin-top: 10px; font-size: 0.9rem; letter-spacing: 2px;">PREPARING YOUR ROYAL EXPERIENCE</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navbar -->
+    <nav id="main-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#" style="font-family: 'Cinzel', serif;">Royal Spice</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#chef">Chef</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#reservation">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#reservation" class="btn btn-primary btn-sm">Book Table</a>
+                <button class="mobile-menu-btn" id="menu-toggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="reveal-up">Padharo Mhare Des</h2>
+            <h1 class="reveal-up glow-text" style="font-family: 'Cinzel', serif;">Royal Spice Palace</h1>
+            <p class="reveal-up">A Grand Celebration of Indian Traditional Luxury & Authentic Palace Flavors.</p>
+            <div class="hero-btns reveal-up">
+                <a href="#reservation" class="btn btn-primary">Book a Royal Table</a>
+                <a href="#menu" class="btn btn-outline">Explore Menu</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span style="color: var(--gold);">Scroll</span>
+            <div class="mouse" style="border-color: var(--gold);"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container split-layout">
+            <div class="about-image reveal-left">
+                <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg" alt="Indian Palace Dining" class="parallax-img">
+                <div class="experience-badge" style="background: linear-gradient(var(--gold), #B8860B); color: var(--black);">
+                    <span class="number">25</span>
+                    <span class="text">Years of Royal Heritage</span>
+                </div>
+            </div>
+            <div class="about-text reveal-right">
+                <span class="subtitle">Our Grand Legacy</span>
+                <h2 style="font-family: 'Cinzel', serif;">The Soul of Indian Tradition</h2>
+                <p>Welcome to Royal Spice Palace, where every corner whispers stories of ancient kingdoms. We bring you a dining experience that transcends time, blending grand traditional aesthetics with the finest culinary secrets from royal kitchens across India.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i data-lucide="crown" style="color: var(--gold);"></i>
+                        <div>
+                            <h4>Authentic Royal Recipes</h4>
+                            <p>Dishes once served to Maharajas, recreated with precision.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i data-lucide="sparkles" style="color: var(--gold);"></i>
+                        <div>
+                            <h4>Majestic Atmosphere</h4>
+                            <p>A cinematic setting inspired by India's most stunning palaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Menu Section -->
+    <section id="menu" class="section menu dark-bg">
+        <div class="container text-center">
+            <span class="subtitle">Traditional Flavors</span>
+            <h2 style="font-family: 'Cinzel', serif;">The Royal Feast</h2>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-target="starters">Starters</button>
+                <button class="tab-btn" data-target="main">Main Course</button>
+                <button class="tab-btn" data-target="breads">Breads</button>
+                <button class="tab-btn" data-target="desserts">Desserts</button>
+                <button class="tab-btn" data-target="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-grid" id="menu-items">
+                <!-- Starters -->
+                <div class="menu-category active" id="starters">
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="assets/chicken65.jpg" alt="Chicken 65">
+                            <span class="price">$15</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-header">
+                                <h3 style="color: var(--gold);">Chicken 65</h3>
+                                <span class="badge-spice">🔥🔥</span>
+                            </div>
+                            <p>Spicy, deep-fried chicken marinated in authentic South Indian spices.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="assets/tandoori.jpg" alt="Tandoori Chicken">
+                            <span class="price">$18</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-header">
+                                <h3 style="color: var(--gold);">Tandoori Chicken</h3>
+                                <span class="badge-spice">🔥</span>
+                            </div>
+                            <p>Juicy chicken marinated in royal yogurt blend, grilled in a traditional clay oven.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="assets/kebab.jpg" alt="Mutton Seekh Kebab">
+                            <span class="price">$22</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-header">
+                                <h3 style="color: var(--gold);">Mutton Seekh Kebab</h3>
+                                <span class="badge-chef">Royal Special</span>
+                            </div>
+                            <p>Minced mutton infused with hand-ground spices, skewered to perfection.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-category" id="main">
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg" alt="Chicken Biryani">
+                            <span class="price">$28</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-header">
+                                <h3 style="color: var(--gold);">Hyderabadi Dum Biryani</h3>
+                                <span class="badge-chef">Royal Signature</span>
+                            </div>
+                            <p>Fragrant basmati rice slow-cooked with tender chicken and saffron strings.</p>
+                        </div>
+                    </div>
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="assets/roganjosh.jpg" alt="Mutton Rogan Josh">
+                            <span class="price">$26</span>
+                        </div>
+                        <div class="food-info">
+                            <h3 style="color: var(--gold);">Mutton Rogan Josh</h3>
+                            <p>A classic Kashmiri mutton curry cooked in a rich saffron-infused gravy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breads, Desserts, Drinks - Following same pattern -->
+                <div class="menu-category" id="breads">
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="assets/naan.png" alt="Naan">
+                            <span class="price">$5</span>
+                        </div>
+                        <div class="food-info">
+                            <h3 style="color: var(--gold);">Butter Garlic Naan</h3>
+                            <p>Soft tandoor bread topped with garlic and pure clarified butter.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category" id="desserts">
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="assets/gulabjamun.jpg" alt="Gulab Jamun">
+                            <span class="price">$10</span>
+                        </div>
+                        <div class="food-info">
+                            <h3 style="color: var(--gold);">Gulab Jamun</h3>
+                            <p>Deep-fried milk dumplings soaked in a warm rose and saffron syrup.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category" id="drinks">
+                    <div class="food-card glass-card reveal-up">
+                        <div class="food-img">
+                            <img src="assets/mangolassi.png" alt="Mango Lassi">
+                            <span class="price">$8</span>
+                        </div>
+                        <div class="food-info">
+                            <h3 style="color: var(--gold);">Mango Lassi</h3>
+                            <p>Chilled yogurt drink blended with the finest Alphonso mangoes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="section featured">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="subtitle">The Crown Jewels</span>
+                    <h2 style="font-family: 'Cinzel', serif;">Chef's Special Selection</h2>
+                </div>
+                <a href="#menu" class="link-btn" style="color: var(--gold);">Full Menu <i data-lucide="arrow-right"></i></a>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-card reveal-up">
+                    <img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg" alt="Hyderabadi Biryani">
+                    <div class="card-overlay">
+                        <span class="badge" style="background: var(--gold); color: #000;">Royal Signature</span>
+                        <div class="card-content">
+                            <h3>Hyderabadi Dum Biryani</h3>
+                            <p>The ultimate slow-cooked masterpiece from the royal Nizami kitchen.</p>
+                            <span class="price">$28</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-card reveal-up" style="transition-delay: 0.1s;">
+                    <img src="assets/kebab.jpg" alt="Seekh Kebab">
+                    <div class="card-overlay">
+                        <span class="badge" style="background: var(--accent); color: white;">Maharaja Special</span>
+                        <div class="card-content">
+                            <h3>Royal Seekh Kebab Platter</h3>
+                            <p>Assorted grilled kebabs marinated in secret 24-spice blend.</p>
+                            <span class="price">$22</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery dark-bg">
+        <div class="container text-center">
+            <span class="subtitle">A Visual Symphony</span>
+            <h2 style="font-family: 'Cinzel', serif;">Our Royal Gallery</h2>
+            <div class="masonry-grid">
+                <div class="masonry-item reveal-up"><img src="assets/chicken65.jpg" alt="Chicken 65"></div>
+                <div class="masonry-item reveal-up"><img src="assets/tandoori.jpg" alt="Tandoori Chicken"></div>
+                <div class="masonry-item reveal-up"><img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg" alt="Biryani"></div>
+                <div class="masonry-item reveal-up"><img src="assets/kebab.jpg" alt="Kebab"></div>
+                <div class="masonry-item reveal-up"><img src="assets/gallery_spread.jpg" alt="Indian Food Spread"></div>
+                <div class="masonry-item reveal-up"><img src="assets/gallery_bowls.png" alt="Royal Curry Bowls"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <div class="testimonial-slider text-center">
+                <div class="testimonial-container" id="testimonial-container">
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i data-lucide="quote" style="color: var(--gold);"></i></div>
+                        <p class="review-text" style="color: var(--cream);">"The atmosphere at Royal Spice Palace is truly majestic. It feels like stepping into a Rajasthan palace. The flavors are exceptionally authentic."</p>
+                        <div class="user-info">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User">
+                            <div>
+                                <h4 style="color: var(--gold);">Aditi Sharma</h4>
+                                <p>Food Critic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section id="chef" class="section chef dark-bg">
+        <div class="container split-layout reverse">
+            <div class="chef-image reveal-right">
+                <img src="https://images.pexels.com/photos/1510682/pexels-photo-1510682.jpeg" alt="Head Chef">
+            </div>
+            <div class="chef-text reveal-left">
+                <span class="subtitle">The Royal Alchemist</span>
+                <h2 style="font-family: 'Cinzel', serif;">Chef Rajesh Kumar</h2>
+                <p>Guardian of ancient spice blends, Chef Rajesh ensures every dish served is a tribute to the royal culinary traditions of India.</p>
+                <div class="chef-quote">
+                    "We don't just cook food; we recreate a legacy of royal hospitality and taste."
+                </div>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="section reservation">
+        <div class="container">
+            <div class="reservation-card glass-card reveal-up">
+                <div class="form-header text-center">
+                    <span class="subtitle">Book Your Royal Experience</span>
+                    <h2 style="font-family: 'Cinzel', serif;">Reserve a Table</h2>
+                </div>
+                <form id="booking-form" class="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Your Royal Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <select id="guests" required>
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 People</option>
+                                <option value="4">4 People</option>
+                                <option value="6">6 People</option>
+                                <option value="10">10+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Your Phone" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirm My Royalty Dining</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer dark-bg">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2 class="logo" style="color: var(--gold); font-family: 'Cinzel', serif;">Royal Spice Palace</h2>
+                    <p>Where tradition meets luxury. Experience the true essence of Indian royalty in every bite.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 style="color: var(--gold);">Explore</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">The Menu</a></li>
+                        <li><a href="#reservation">Book Table</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 style="color: var(--gold);">Contact</h3>
+                    <p><i data-lucide="map-pin" style="color: var(--gold);"></i> 456 Palace Lane, Jaipur, RJ</p>
+                    <p><i data-lucide="phone" style="color: var(--gold);"></i> +91 141 555 0198</p>
+                    <p><i data-lucide="mail" style="color: var(--gold);"></i> royal@spicepalace.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3 style="color: var(--gold);">Royal Updates</h3>
+                    <p>Subscribe for exclusive royal events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" style="background: var(--gold);"><i data-lucide="send" style="color: #000;"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Royal Spice Palace. All Rights Reserved. Crafted with Royal Pride.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Reservation Button (Mobile) -->
+    <a href="#reservation" class="floating-btn" style="background: var(--gold); color: #000;">
+        <i data-lucide="calendar"></i>
+    </a>
+
+    <script src="main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
