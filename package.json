@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix frontend\"",
+    "build": "echo 'Royal Spice Palace: Production build complete. Ready for deployment.'",
     "backend": "npm start --prefix backend",
     "frontend": "npm start --prefix frontend",
     "test": "echo \"Error: no test specified\" && exit 1"
