@@ -376,10 +376,15 @@ h2 {
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
+/* Menu & Food Cards Styling */
+.menu-grid-container {
+    width: 100%;
+}
+
 .menu-category {
     display: none;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
     animation: fadeIn 0.8s ease;
 }
 
@@ -387,9 +392,66 @@ h2 {
     display: grid;
 }
 
-/* New Menu Sections */
-.popular-drinks, .royal-desserts, .traditional-breads {
-    background: var(--bg-dark);
+.food-card {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 25px;
+    padding: 25px;
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold);
+    box-shadow: var(--glow);
+}
+
+.food-img {
+    width: 100%;
+    height: 220px; /* Controlled height */
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.food-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.food-card:hover .food-img img {
+    transform: scale(1.1);
+}
+
+.food-info h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+/* Featured Dishes Fix */
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+}
+
+.featured-card {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 450px;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Reviews Section */
